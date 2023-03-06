@@ -1,0 +1,82 @@
+.main {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.newApplication {
+  margin: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.middleModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.newApplicationModal {
+  margin: 0 auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.modalBackground {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.258);
+  top: 0;
+  z-index: 0;
+}
+.modalOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  animation: showModal 0.3s ease-in;
+}
+@keyframes showModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal {
+  position: absolute;
+  z-index: 1;
+  background: #e1e1e1;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  flex-direction: column;
+}
+.textProblem {
+  resize: none;
+  height: 15%;
+  width: 80%;
+  border-radius: 10px;
+  padding: 15px;
+  border: none;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.choiceCategory {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}

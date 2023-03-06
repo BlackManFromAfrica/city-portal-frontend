@@ -1,0 +1,62 @@
+.auth {
+  margin: 0 auto;
+  width: 80%;
+  height: 20rem;
+  margin-top: 100px;
+}
+.info {
+  height: 100%;
+  width: 50%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.welcome {
+  border-radius: 20px;
+  display: flex;
+  background-color: rgb(241, 253, 250);
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.welcome img{
+  border-radius: 15px;
+}
+.welcome:hover {
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(31, 146, 234, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(31, 146, 234, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(31, 146, 234, 0.2);
+}
+.welcomeText {
+  position: absolute;
+  font-size: larger;
+  animation: pulsate 2s ease-out;
+  animation-iteration-count: infinite;
+}
+@keyframes pulsate {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+.isAccountText {
+  margin-top: 20px;
+}
+.isAccountText span {
+  color: lightblue;
+  transition: 0.2s;
+
+}
+.isAccountText span:hover {
+  transition: 0.2s;
+  color: blue;
+}

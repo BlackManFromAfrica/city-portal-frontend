@@ -1,0 +1,109 @@
+.header {
+  height: 10%;
+  padding: 1% 10%;
+  justify-content: space-between;
+  scale: 0.8;
+}
+.burgerMenu {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.logoText {
+  font-weight: bolder;
+  font-size: large;
+  align-self: flex-end;
+  color: black;
+  transition: 0.5s;
+}
+.logoText:hover {
+  transition: 0.5s;
+  color: blue;
+}
+.logo {
+  cursor: pointer;
+}
+.menu {
+  justify-content: space-between;
+}
+.authButton {
+  border: none;
+  padding: 15% 60%;
+  border-radius: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+  font-weight: bold;
+}
+.authButton:hover {
+  transition: 0.5s;
+  background-color: rgb(190, 190, 190);
+}
+.link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 20px;
+  animation: showText 1s ease-in;
+}
+
+@keyframes showText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.link:hover {
+  color: blue;
+}
+.menuOpen {
+  display: none;
+  transition: 0.2s;
+  right: 0;
+}
+.menuMobile {
+  position: absolute;
+  right: 0;
+  background: rgb(241, 241, 241);
+  height: 600px;
+  width: 200px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+
+}
+.linkMobile {
+  color: black;
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  width: 80%;
+  border-radius: 15px;
+}
+.linkMobile a{
+  color: black;
+}
+.menuOpen {
+  transition: 0.2s;
+}
+@media (max-width: 414px) {
+  .header {
+    padding: 0;
+    width: 100%;
+    scale: 1;
+  }
+  .link,
+  .auth {
+    display: none;
+  }
+  .menuOpen {
+    display: block;
+  }
+}
